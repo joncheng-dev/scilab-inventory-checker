@@ -6,6 +6,7 @@
 - 1:20 PM - Firebase / vite research
 - 2:00+ PM - Start Capstone Project Proposal
 - 3:40 PM - Create README.md for project overview. Submit to Epicenter.
+- 3:47 PM - Create capstone-proposal.md. Copy / paste from G. Docs to md file; Edit formatting
 
 # Research TypeScript
 
