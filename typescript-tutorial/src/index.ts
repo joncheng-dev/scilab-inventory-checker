@@ -195,3 +195,47 @@ function calculateTax12(income: number, taxYear = 2022): number { // Default val
 }
 calculateTax12(10_000); // uses default value
 calculateTax12(10_000, 2023); // uses 2023 passed in; optional argument
+
+// ### OBJECTS ################################################################
+// In JS, it's ok to declare an object, and then update it after with more properties.
+let employee = { id: 1 };
+employee.name = "Jon";
+// This is not valid in TypeScript. Note the error on name property we're trying to add.
+
+// TS has inferred the shape of this employee object.
+// Just like all TS variables so far, we can explicitly apply a type annotation:
+let employee2: {
+  id: number,  // this object has two properties, specifically typed
+  name: string,
+} = { id: 1 }; // Name property missing here. 
+employee2.name = "Jon"; // Error here is gone because of our type annotation.
+// But now employee2 has a new kind of error. Property 'name' is missing in the initial
+// instantialization of employee2.
+
+// Fix Approach #1 - Set initial name to an empty string
+let employee3: {
+  id: number,  
+  name: string,
+} = { id: 1, name = '' }; 
+employee2.name = "Jon"; 
+
+// Fix Approach #2 - Make name property optional
+let employee4: {
+  id: number,  
+  name?: string,
+} = { id: 1 }; // Now name property is not necessary for initializing employee4.
+employee2.name = "Jon"; 
+
+// Fix Approach #3 - Initialize it correctly.
+let employee5: {
+  id: number,
+  name: string,
+} = { id: 1, name: "Jon" }; // Both id and name are provided on instantialization.
+
+// What if you want to make some properties read only so that you can't change them later?
+// Use the read-only modifier
+let employee6: {
+  readonly id: number, // readonly modifier prevents id property from being changed later
+  name: string,
+} = { id: 1, name: "Jon" };
+employee6.id = 0; // This will not work.

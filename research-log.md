@@ -119,3 +119,5 @@ Built-in Types:
 ```json
     "noUnusedLocals": true /* Enable error reporting when local variables aren't read. */,
 ```
+
+## OBJECTS
