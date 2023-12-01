@@ -130,9 +130,18 @@ Built-in Types:
 
 ## Firebase
 
-- _Firebase in 100 seconds: https://www.youtube.com/watch?v=vAoB4VbhRzM_
+- _Video: Firebase in 100 seconds: https://www.youtube.com/watch?v=vAoB4VbhRzM_
 - _Can connect with FireStore to use as database._
 - _Can easily implement Google Authentication (OAuth)._
+- _Question: What is included in the Firebase free tier? https://firebase.google.com/pricing_
+  > - _Should be ok with the free tier._
+- _Firebase is weak for complex queries. What is considered a "complex query"?_
+  > - _https://stackoverflow.com/questions/42672790/firebase-for-complex-query-a-no-go. In this case, the question writer has 3 parameters, but it "was not allowed". The best answer responds saying "complex queries" can be ok. Depends on how your data is structured / stored -- allowing it to be queried. Take away: Not quite sure how this might impact my project just yet._
+- _Video: WHAT IS FIREBASE | FULL REVIEW https://www.youtube.com/watch?v=P7FwFANxW4s_
+  > - _Advantages: Speed up back end development. Focus on front end._
+  > - _Firebase is a back end as a service platform (BaaS), offering tools and backend to build highly scalable apps._
+  > - _Firebase Auth is a Google Authentication feature; allows you to use pre-built UI libraries for user authentication. Use to create better sign-in experience, with security._
+  > - _Realtime Database - store data; with ability to work offline._
 
 ## Vite
 
