@@ -1,4 +1,11 @@
-2023/12/01 - Log Started Writing at 8:20 AM
+### Research & Planning LLog
+
+#### Friday, 12/01/2023
+
+- ~8:20 AM - Started Log / TypeScript Tutorial
+- 1:20 PM - Firebase / vite research
+- 2:00+ PM - Start Capstone Project Proposal
+- 3:40 PM - Create README.md for project overview. Submit to Epicenter.
 
 # Research TypeScript
 
@@ -125,8 +132,6 @@ Built-in Types:
 - _Refer to `index.ts`._
 
 # FURTHER EXPLORATION / RESEARCH
-
-2023/12/01 - Start around 1:20 PM
 
 ## Firebase
 
