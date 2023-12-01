@@ -13,6 +13,9 @@ in terminal, type command
 `tsc index.ts` without the arrows
 This makes an `index.js` in the same folder
 
+- _When `dist` and `src` is configured, can type `tsc` in terminal to compile whole project_
+- _Then type `node index.js` to execute the specific file._
+
 ## TS CONFIG
 
 To create a configuration file for typescript compiler
@@ -63,18 +66,30 @@ This file specifies how our TS code maps to our JS code. We don't need to unders
 
 <!-- prettier-ignore -->
 Built-in Types:
-| JavaScript | TypeScript |
-|------------|------------|
-|   number   |     any    |
-|    string  |    unknown |
-|  boolean   |   never    |
-|    null    |    enum    |
-| undefined  |    tuple   |
-|   object   |            |
+| JavaScript  | TypeScript |
+|-------------|------------|
+|   number    |   any      |
+|   string    |   unknown  |
+|   boolean   |   never    |
+|   null      |   enum     |
+|   undefined |   tuple    |
+|   object    |            |
 
 ## THE ANY TYPE
 
-Refer to code along in `index.ts`
+- _Refer to code along in `index.ts`_
+- _Avoid type Any for best practices_
+
+## THE ARRAY TYPE
+
+- _Refer to code along in `index.ts`_
+
+## THE TUPLE TYPE
+
+- _Refer to code along in `index.ts`_
+- _Bug in TS: It is possible to use array method `push` into a tuple, which breaks it. But it's allowed_
+- _Best practice: Restrict tuples to 2 values only. Keeps it easy to understand._
+- _Best to use it as `key` `value` pairs._
 
 ## ENUMS
 
