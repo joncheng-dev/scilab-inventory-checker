@@ -239,3 +239,19 @@ let employee6: {
   name: string,
 } = { id: 1, name: "Jon" };
 employee6.id = 0; // This will not work.
+
+// What if we want a method in the object?
+// 1. Define signature of the method, including return value type. Use => 'type here'
+// 2. Supply the method when initializing the object. 
+let employee7: {
+  readonly id: number,
+  name: string,
+  startDate: (date: Date) => void; // 1. Define the signature of this method, incl. return value.
+} = {
+  id: 1,
+  name: "Jon",
+  startDate: (date: Date) => { // 2. Supply the method here.
+    console.log(date);
+  }
+};
+// This syntax is a bit verbose / messy. There's a better way to work with objects.

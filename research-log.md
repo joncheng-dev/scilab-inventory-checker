@@ -121,3 +121,40 @@ Built-in Types:
 ```
 
 ## OBJECTS
+
+- _Refer to `index.ts`._
+
+# FURTHER EXPLORATION / RESEARCH
+
+2023/12/01 - Start around 1:20 PM
+
+## Firebase
+
+- _Firebase in 100 seconds: https://www.youtube.com/watch?v=vAoB4VbhRzM_
+- _Can connect with FireStore to use as database._
+- _Can easily implement Google Authentication (OAuth)._
+
+## Vite
+
+- _Vite in 100 seconds: https://www.youtube.com/watch?v=KCrXgy8qtjM_
+- _Fast and light. Makes TS 20-30x faster._
+- _Can be used to React to construct a webpack-like setup. Use this command:_
+
+```json
+    $ npm init vite
+```
+
+- _Can set up a React TypeScript project easily, much like we used create-react-app._
+- _Comes with a vite config file `vite.config.ts` where we can add cool plugins._
+- _To serve the application locally, run:_
+
+```json
+    $ npm run dev
+```
+
+- _When modifying source code, changes are reflected instantly in local server without losing state of application. This is called "Hot Module Replacement" (HMR)_
+- _Run this to build the app for production:_
+
+```json
+    $ npm run build
+```
