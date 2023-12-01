@@ -74,6 +74,8 @@ Built-in Types:
 
 ## THE ANY TYPE
 
+Refer to code along in `index.ts`
+
 ## ENUMS
 
 Constants related to one another. i.e. T-shirt sizes

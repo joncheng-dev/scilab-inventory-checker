@@ -21,4 +21,17 @@ const enum Size {
 let mySize: Size = Size.Medium;
 console.log(mySize); // This will show the numeric value of "Medium", 1.
 
-// FUNCTIONS
+// BUILT-IN DATA TYPES
+let sales: number = 123_456_789; // `number` type. // Can put "_" to break up a large num
+let course: string = "TypeScript"; // 'string' type
+let is_published: boolean = true; // 'boolean' type
+
+// ANY type
+// TS can infer type of our variables based on their values
+let sales2 = 123_456_789; // can work without "number"
+let course2 = "TypeScript"; // can work without "string"
+let level; // If declare a variable but don't initialize its value, it becomes type 'any'
+// can set it to a number, and then later to type string
+level = 1;
+level = "a";
+// but this is against the purpose of using TypeScript in the first place.
