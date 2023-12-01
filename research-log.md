@@ -183,3 +183,7 @@ Built-in Types:
 > ```bash
 >    $ npm run build
 > ```
+
+### NOTE: Worked on Capstone Proposal Google Docs
+
+- _https://docs.google.com/document/d/1Vk5Ze77YqNjfcRR8oHfHETSusREcpDkR_FD9O2H60VA/edit?usp=sharing_
