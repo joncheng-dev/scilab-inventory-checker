@@ -91,9 +91,31 @@ Built-in Types:
 - _Best practice: Restrict tuples to 2 values only. Keeps it easy to understand._
 - _Best to use it as `key` `value` pairs._
 
-## ENUMS
+## THE ENUM TYPE
 
-Constants related to one another. i.e. T-shirt sizes
-Refer to `index.ts`.
+- _Constants related to one another. i.e. T-shirt sizes_
+- _Refer to `index.ts`._
 
-## FUNCTION
+## FUNCTIONS
+
+- _Refer to `index.ts`._
+- _Best practice: always annotate parameter type and return value type._
+- _Enable these 3 compiler options (listed below)._
+- _Benefit: Compilation error immediately if returns wrong type of value._
+- _In `tsconfig.json` file, un-comment `"noUnusedParameters": true,`. This will warn for unused parameters._
+
+```json
+    "noUnusedParameters": true /* Raise an error when a function parameter isn't read. */,
+```
+
+- _In `tsconfig.json` file, uncomment `"noImplicitReturns": true`. This will warn if in function, not all code paths return a value._
+
+```json
+    "noImplicitReturns": true /* Enable error reporting for codepaths that do not explicitly return in a function. */,
+```
+
+- _To warn for unused variables, uncomment `"noImplicitReturns": true` in `tsconfig.json` file._
+
+```json
+    "noUnusedLocals": true /* Enable error reporting when local variables aren't read. */,
+```

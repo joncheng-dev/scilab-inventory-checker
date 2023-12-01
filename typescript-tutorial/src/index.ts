@@ -82,7 +82,116 @@ const enum Size2 { // If assigning non numerical values, must manually assign to
 
 // Putting a const in front of enum optimizes the js code created.
 // Not optimized: enum Size {}
+// -- This makes the compiled JS code bulky
 // Optimized: const enum Size {}
+// -- This makes the compiled JS code clean
 
 let mySize: Size = Size.Medium;
 console.log(mySize); // This will show the numeric value of "Medium", 2.
+
+// ### FUNCTIONS ################################################################
+function calculateTax(income: number) { // hover over calculateTax; see 'void' type return value
+}
+
+function calculateTax2(income: number) { // hover. We see 'number' type return value, inferred.
+  return 0;
+}
+
+// Best practice: Declare a return data type.
+function calculateTax3(income: number): number { // Declared 'number' type
+  return 0;
+}
+// Declare type void if you won't be returning anything
+function calculateTax4(income: number): void { // Declared 'void' because no return value
+}
+
+// Notice 'income'. It is an unused parameter.
+function calculateTax5(income: number): number { 
+  return 0;
+}
+// There is a compiler option for detecting unused parameters.
+// In tsconfig file, there is "noUnusedParameters". Can turn this on.
+function calculateTax6(income: number): number {
+  if (income < 50000) { // Error is gone if we use this parameter. 
+    return income * 1.2;
+  } 
+}
+
+// What if not all code paths return a value? What if income > 50000? 
+function calculateTax7(income: number) {
+  if (income < 50000) { 
+    return income * 1.2;
+  } 
+  // If not "if" condition, this function returns undefined.
+  // To catch this, turn on "noImplicitReturns" in tsconfig.json
+}
+
+function calculateTax8(income: number): number { //Best practice to annotate functions properly
+  if (income < 50000) { 
+    return income * 1.2;
+  } else {
+    return income * 1.3; // All code paths now return a value
+  }
+}
+
+function calculateTax8(income: number): number { 
+  let x; // If we declare a variable and don't use it in the function
+  // This is an unused variable. To warn for this, un-comment in tsconfig.json:
+  // "noUnusedLocals": true /* Enable error reporting when local variables aren't read. */,
+  if (income < 50000) { 
+    return income * 1.2;
+  } else {
+    return income * 1.3; 
+  }
+}
+
+// TS is strict about the number of arguments passed in to a function.
+function calculateTax9(income: number, taxYear: number) {
+  if (taxYear < 2022) {
+    return income * 1.2;
+  } else {
+    return income * 1.3;
+  }
+}
+
+calculateTax9(10_000, 2022, 1); // JS would allow this, but TS does not.
+
+// What about making a parameter optional?
+function calculateTax0(income: number, taxYear?: number) { // Add '?' after taxYear
+  if (taxYear < 2022) { 
+    return income * 1.2;
+  } else {
+    return income * 1.3;
+  }
+}
+// Now it's ok to call the function without 2 parameters
+calculateTax0(10_000);
+
+function calculateTax10(income: number, taxYear?: number) { // Add '?' after taxYear
+  if (taxYear < 2022) { // However, taxYear is now possibly undefined.
+    return income * 1.2;
+  } else {
+    return income * 1.3;
+  }
+}
+
+// Resolve Approach #1:
+function calculateTax11(income: number, taxYear?: number) { // Add '?' after taxYear
+  if ((taxYear || 2022) < 2022) { // However, taxYear is now possibly undefined.
+    return income * 1.2; // Doing this, if taxYear is given, use it. If not, use 2022
+  } else {
+    return income * 1.3;
+  }
+}
+
+// Resolve Approach #2:
+// Give taxYear a default value.
+function calculateTax12(income: number, taxYear = 2022): number { // Default value 2022
+  if (taxYear < 2022) { 
+    return income * 1.2;
+  } else {
+    return income * 1.3;
+  }
+}
+calculateTax12(10_000); // uses default value
+calculateTax12(10_000, 2023); // uses 2023 passed in; optional argument
