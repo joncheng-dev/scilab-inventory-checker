@@ -9,6 +9,8 @@
 - 3:47 PM - Create capstone-proposal.md. Copy / paste from G. Docs to md file; Edit formatting
 - 4:05 PM - Firebase / Firestore / Project Big Picture Scope - additional research
 - 4:33 PM - Watch CRUD Tutorial using React + Firebase
+- 10:10 PM - Watch CRUD Tutorial using React + Firebase (continued)
+- 10:39 PM - Read weekend reading React with NoSQL
 
 # Research TypeScript
 
