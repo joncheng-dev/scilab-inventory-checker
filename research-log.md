@@ -7,6 +7,7 @@
 - 2:00+ PM - Start Capstone Project Proposal
 - 3:40 PM - Create README.md for project overview. Submit to Epicenter.
 - 3:47 PM - Create capstone-proposal.md. Copy / paste from G. Docs to md file; Edit formatting
+- 4:05 PM - Firebase / Firestore / Project Big Picture Scope - additional research
 
 # Research TypeScript
 
@@ -134,6 +135,13 @@ Built-in Types:
 
 # FURTHER EXPLORATION / RESEARCH
 
+## Tying It All Together
+
+- _CRUD Tutorial Using React + Firebase | Firebase 9 and Firestore Tutorial_
+  > - _https://www.youtube.com/watch?v=jCY6DH8F4oc_
+- _Building a Full-Stack Project with Firebase 10 and React (Vite)_
+  > - _https://www.linkedin.com/pulse/building-full-stack-project-firebase-10-react-vite-mg-mayur-gandhi/_
+
 ## Firebase
 
 - _Video: Firebase in 100 seconds: https://www.youtube.com/watch?v=vAoB4VbhRzM_
@@ -148,6 +156,15 @@ Built-in Types:
   > - _Firebase is a back end as a service platform (BaaS), offering tools and backend to build highly scalable apps._
   > - _Firebase Auth is a Google Authentication feature; allows you to use pre-built UI libraries for user authentication. Use to create better sign-in experience, with security._
   > - _Realtime Database - store data; with ability to work offline._
+- _StackOverflow - What's the difference between Cloud Firestore and the Firebase Realtime Database?_
+  > - _https://stackoverflow.com/questions/46549766/whats-the-difference-between-cloud-firestore-and-the-firebase-realtime-database_
+  > - _Firebase's Realtime Database is a "just a giant JSON tree"._
+  > - _Firestore's Cloud database is more structured._
+
+## Firestore
+
+- _Firestore Data Modeling - Five Cool Techniques_
+  > - _https://www.youtube.com/watch?v=35RlydUf6xo_
 
 ## Vite
 
