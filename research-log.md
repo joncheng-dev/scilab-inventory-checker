@@ -8,6 +8,7 @@
 - 3:40 PM - Create README.md for project overview. Submit to Epicenter.
 - 3:47 PM - Create capstone-proposal.md. Copy / paste from G. Docs to md file; Edit formatting
 - 4:05 PM - Firebase / Firestore / Project Big Picture Scope - additional research
+- 4:33 PM - Watch CRUD Tutorial using React + Firebase
 
 # Research TypeScript
 
