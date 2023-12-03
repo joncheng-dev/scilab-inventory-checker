@@ -12,6 +12,10 @@
 - 10:10 PM - Watch CRUD Tutorial using React + Firebase (continued)
 - 10:39 PM - Read weekend reading React with NoSQL
 
+#### Saturday, 12/02/2023
+
+- Time Unk. - LearnHowToProgram.com sections on React useState and useEffect hooks
+
 # Research TypeScript
 
 #### Watching "TypeScript Tutorial for Beginners"
