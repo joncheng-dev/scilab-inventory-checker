@@ -178,6 +178,18 @@ Built-in Types:
 - _Firestore Data Modeling - Five Cool Techniques_
   > - _https://www.youtube.com/watch?v=35RlydUf6xo_
 
+#### _Database structure brainstorm_
+
+- _Objective: To record in the database who has currently checked out an item from the laboratory inventory._
+  > - _Step 1. All entries in database have a "checked out by" field. Starts null. Field can be updated by a user name._
+  > - _Step 2. Authentication. When user checks out the item, save the user's name (and Id) into the "checked out by" field._
+  >   > - _One user should be able to check out multiple items in database (user's name is in "checked out by" field)._
+  > - _Step 3. Accounts. Have multiple users/accounts being able to concurrently check out multiple different items._
+  > - _Step 4. Upon clicking an item's details, show who is currently is in possession of it._
+  >   > - _Check that this works for one user checking out multiple items in database._
+  > - _Step 5. Make a profile for each user._
+  >   > - _Upon clicking a user's profile, display all items currently checked out by this user._
+
 ## Vite
 
 - _Vite in 100 seconds: https://www.youtube.com/watch?v=KCrXgy8qtjM_
