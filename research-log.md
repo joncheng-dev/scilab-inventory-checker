@@ -18,7 +18,8 @@
 
 #### Friday, 12/08/2023
 
-- ~8:05 AM - Start experimental project for experimenting with database structure; Link to Firestore
+- ~8:05 AM - Start experimental project for experimenting with database structure; Link to Firestore; Link to expt project: https://github.com/joncheng-dev/db-expt-nosql.git\
+- 10:58 AM - Brainstorm database organization; 1. to accomodate categories -- possibly "collections"; 2. to show that a certain user checked out an item
 
 # Research TypeScript
 
