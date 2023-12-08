@@ -16,6 +16,10 @@
 
 - Time Unk. - LearnHowToProgram.com sections on React useState and useEffect hooks
 
+#### Friday, 12/08/2023
+
+- ~8:05 AM - Start experimental project for experimenting with database structure; Link to Firestore
+
 # Research TypeScript
 
 #### Watching "TypeScript Tutorial for Beginners"
