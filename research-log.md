@@ -18,9 +18,10 @@
 
 #### Friday, 12/08/2023
 
-- ~8:05 AM - Start experimental project for experimenting with database structure; Link to Firestore; Link to expt project: https://github.com/joncheng-dev/db-expt-nosql.git\
+- ~8:05 AM - Start experimental project for experimenting with database structure; Link to Firestore; Link to expt project: https://github.com/joncheng-dev/db-expt-nosql.git
 - 10:58 AM - Brainstorm database organization; 1. to accomodate categories -- possibly "collections"; 2. to show that a certain user checked out an item
 - ~1:00 PM - Try to use ideas from brainstorm in experiment project.
+- ~2:40 PM - Research grabbing user information such as account email from Firebase/Firestore. Next step would be to use this information to save into checkedOutBy field in an item entry.
 
 # Research TypeScript
 
@@ -173,6 +174,7 @@ Built-in Types:
   > - _https://stackoverflow.com/questions/46549766/whats-the-difference-between-cloud-firestore-and-the-firebase-realtime-database_
   > - _Firebase's Realtime Database is a "just a giant JSON tree"._
   > - _Firestore's Cloud database is more structured._
+- _Firebase Auth Tutorial #14 - Showing User Info: https://www.youtube.com/watch?v=N5-veJg7ktk_
 
 ## Firestore
 
@@ -189,6 +191,7 @@ Built-in Types:
   > - _When user views an item's details, and clicks check out, save the user's name (and Id) into the "checked out by" field._
   >   > - _One user should be able to "check out" multiple items in database (user's name is in "checked out by" field)._
   >   > - _Clicking an item's details should show the user who has currently checked out the item._
+  >   > - _For now, follow the lesson on authentication using email / password. For capstone, try Google Authentication._
 - _Objective: Availability Status_
   > - _Show availability. When checked-out field is null, the item's status is "available". When someone has the item, the item's status should be "unavailable"._
   >   > - _1. Update doc in database to have this field._
