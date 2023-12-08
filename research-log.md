@@ -181,14 +181,30 @@ Built-in Types:
 #### _Database structure brainstorm_
 
 - _Objective: To record in the database who has currently checked out an item from the laboratory inventory._
-  > - _Step 1. All entries in database have a "checked out by" field. Starts null. Field can be updated by a user name._
-  > - _Step 2. Authentication. When user checks out the item, save the user's name (and Id) into the "checked out by" field._
-  >   > - _One user should be able to check out multiple items in database (user's name is in "checked out by" field)._
-  > - _Step 3. Accounts. Have multiple users/accounts being able to concurrently check out multiple different items._
-  > - _Step 4. Upon clicking an item's details, show who is currently is in possession of it._
-  >   > - _Check that this works for one user checking out multiple items in database._
-  > - _Step 5. Make a profile for each user._
+  > - _All entries in database have a "checked out by" field. Starts null. Field can be updated by a user name._
+  > - _This user name is initially a string._
+  > - _Later, change it to a link, which goes to a user's profile page._
+- _Objective: Authentication. Have accounts to keep track of multiple users and their checked out items._
+  > - _When user views an item's details, and clicks check out, save the user's name (and Id) into the "checked out by" field._
+  >   > - _One user should be able to "check out" multiple items in database (user's name is in "checked out by" field)._
+  >   > - _Clicking an item's details should show the user who has currently checked out the item._
+- _Objective: Availability Status_
+  > - _Show availability. When checked-out field is null, the item's status is "available". When someone has the item, the item's status should be "unavailable"._
+  >   > - _1. Update doc in database to have this field._
+  >   > - _2. Have hooks to handle this state change(?)._
+  >   > - _3. Update business logic & UI._
+- _Objective: Profiles_
+  > - _Make a profile for each user._
+  >   > - _Would this be its own "collection" in the database with each user being its own doc?_
   >   > - _Upon clicking a user's profile, display all items currently checked out by this user._
+  >   > - _Any user can view another user's profile._
+- _Objective: Quantities_
+  > - _Update initial form to have a quantity field._
+  >   > - _A user may check out some (not necessarily all counts) of an item. I.e. Jon has checked out 5 of 10 slinkies. This means 5 are still available._
+- _Objective: Categories_
+  > - _Each item can have its own category tags. Similar to Many to Many relationships. How would this look like in a NoSQL database?_
+- _Objective: Searches/Queries_
+  > - _Users would be able to search for items by category, by name in string, etc._
 
 ## Vite
 
