@@ -174,7 +174,13 @@ Built-in Types:
   > - _https://stackoverflow.com/questions/46549766/whats-the-difference-between-cloud-firestore-and-the-firebase-realtime-database_
   > - _Firebase's Realtime Database is a "just a giant JSON tree"._
   > - _Firestore's Cloud database is more structured._
-- _Firebase Auth Tutorial #14 - Showing User Info: https://www.youtube.com/watch?v=N5-veJg7ktk_
+- _Research finding user account information -- for purpose of saving into checkedOutBy field._
+  > - _Firebase Auth Tutorial #14 - Showing User Info: https://www.youtube.com/watch?v=N5-veJg7ktk_
+  > - _Firebase Auth Tutorial #13 - Firestore Realtime Listener: https://www.youtube.com/watch?v=-FbJaAztM_k_
+  > - _Firebase Auth Tutorial #15 - Firestore Users Collection: https://www.youtube.com/watch?v=qWy9ylc3f9U_
+  > - _https://stackoverflow.com/questions/38352772/is-there-any-way-to-get-firebase-auth-user-uid_
+  >   > - _Can get current user email with `userCredential.user.email`_
+  >   > - _Can get current user id with `userCredential.user.uid`_
 
 ## Firestore
 
