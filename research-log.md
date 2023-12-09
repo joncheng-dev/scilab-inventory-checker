@@ -22,6 +22,8 @@
 - 10:58 AM - Brainstorm database organization; 1. to accomodate categories -- possibly "collections"; 2. to show that a certain user checked out an item
 - ~1:00 PM - Try to use ideas from brainstorm in experiment project.
 - ~2:40 PM - Research grabbing user information such as account email from Firebase/Firestore. Next step would be to use this information to save into checkedOutBy field in an item entry.
+- ~3:30 PM - Try to use user info in checkedOutBy property in items. First, make a "Check Out" button, which then stores the current user's information into a checkedOutBy property.
+- ~4:00 PM - Approach from video does not seem to grab user info on account creation. Continuing research by reading other sources including Firebase/Firestore documentation.
 
 # Research TypeScript
 
@@ -181,6 +183,8 @@ Built-in Types:
   > - _https://stackoverflow.com/questions/38352772/is-there-any-way-to-get-firebase-auth-user-uid_
   >   > - _Can get current user email with `userCredential.user.email`_
   >   > - _Can get current user id with `userCredential.user.uid`_
+  > - _Next question is, how can I access this information outside of the SignIn component?_
+  >   > - _At this timestamp, the video creator discusses how to grab the user's credentials from the SignIn page at moment of creating account: https://youtu.be/qWy9ylc3f9U?si=M4aC3WcnyuDhcc3v&t=259_
 
 ## Firestore
 
