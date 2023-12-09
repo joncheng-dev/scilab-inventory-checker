@@ -24,6 +24,8 @@
 - ~2:40 PM - Research grabbing user information such as account email from Firebase/Firestore. Next step would be to use this information to save into checkedOutBy field in an item entry.
 - ~3:30 PM - Try to use user info in checkedOutBy property in items. First, make a "Check Out" button, which then stores the current user's information into a checkedOutBy property.
 - ~4:00 PM - Approach from video does not seem to grab user info on account creation. Continuing research by reading other sources including Firebase/Firestore documentation.
+- ~4:20 PM - Firebase/Firestore documentation: Found that the approach I was using is an outdated version. Works with new implementation.
+- ~4:25 PM - Now proceeding with next step: Have a check-out button shown in item details that collects the user's id upon clicking.
 
 # Research TypeScript
 
