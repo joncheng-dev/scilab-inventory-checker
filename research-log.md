@@ -27,6 +27,10 @@
 - ~4:20 PM - Firebase/Firestore documentation: Found that the approach I was using is an outdated version. Works with new implementation.
 - ~4:25 PM - Now proceeding with next step: Have a check-out button shown in item details that collects the user's id upon clicking.
 
+#### Saturday, 12/09/2023
+
+- ~9:00 AM - Work on adding 'available' field to items. This value starts as true, and becomes false when user clicks to check out the item. Also researching how to simultaneously add this item to user's profile of items they currently are in possession of -- leading me to "batch writes" and "transactions".
+
 # Research TypeScript
 
 #### Watching "TypeScript Tutorial for Beginners"
@@ -187,6 +191,8 @@ Built-in Types:
   >   > - _Can get current user id with `userCredential.user.uid`_
   > - _Next question is, how can I access this information outside of the SignIn component?_
   >   > - _At this timestamp, the video creator discusses how to grab the user's credentials from the SignIn page at moment of creating account: https://youtu.be/qWy9ylc3f9U?si=M4aC3WcnyuDhcc3v&t=259_
+  - _Research "batch writes" and "transactions" in firebase._
+    > - _How do Transactions Work? | Get to know Cloud Firestore #8: https://www.youtube.com/watch?v=dOVSr0OsAoU_
 
 ## Firestore
 
@@ -209,6 +215,14 @@ Built-in Types:
   >   > - _1. Update doc in database to have this field._
   >   > - _2. Have hooks to handle this state change(?)._
   >   > - _3. Update business logic & UI._
+  > - _Display a Profile for the user._
+  >   > - _Here, show what the user currently has in their possession._
+  >   > - _You are logged in as: "name@email.com"._
+  > - _Return button should reverse the property fields._
+  >   > - _In the specified item, the available property should return to "true"._
+  >   > - _In the user's profile, the item's id should be removed from the checkedOutItems array._
+  > - _Check to see that multiple users can concurrently coexist._
+  >   > - _Users should be able to check out multiple items without clashing with the other users._
 - _Objective: Profiles_
   > - _Make a profile for each user._
   >   > - _Would this be its own "collection" in the database with each user being its own doc?_
@@ -221,6 +235,9 @@ Built-in Types:
   > - _Each item can have its own category tags. Similar to Many to Many relationships. How would this look like in a NoSQL database?_
 - _Objective: Searches/Queries_
   > - _Users would be able to search for items by category, by name in string, etc._
+- _Objective: Authorization for Roles_
+  > - _Admin roles have the addition ability to CRUD the items in inventory._
+  > - _Standard roles can only Read, check out, and return items._
 
 ## Vite
 
