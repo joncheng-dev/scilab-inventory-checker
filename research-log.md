@@ -34,6 +34,7 @@
 #### Friday, 12/15/2023
 
 - ~8:07 AM - Log Note: Been working on a new repository. Before, I've experimented with using React to connect to Firebase/Firestore. I've been able to CRUD the correct collections and logs in the database in Firestore. Decided to start my actual repo, creating a TypeScript react app using vite. I've been refactoring, adding the TS typing to the components. https://github.com/joncheng-dev/lab-inventory-tracker
+- 8:42 AM - On my form, I want users to be able to tick checkboxes to indicate that the item they are adding to the database has certain tags or categories (i.e. General, Biology, Chemistry, Earth Science, Physics). These values would be added to an array in the new entry I am creating. I'd also want this functionality on the Edit Form. So far, I've been following the tutorial here: https://contactmentor.com/checkbox-list-react-js-example/. However, their approach may not line up perfectly with mine. Spent the last half hour or so trying to merge this concept with mine.
 
 # Research TypeScript
 
