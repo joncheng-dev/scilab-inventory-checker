@@ -31,6 +31,10 @@
 
 - ~9:00 AM - Work on adding 'available' field to items. This value starts as true, and becomes false when user clicks to check out the item. Also researching how to simultaneously add this item to user's profile of items they currently are in possession of -- leading me to "batch writes" and "transactions".
 
+#### Friday, 12/15/2023
+
+- ~8:07 AM - Log Note: Been working on a new repository. Before, I've experimented with using React to connect to Firebase/Firestore. I've been able to CRUD the correct collections and logs in the database in Firestore. Decided to start my actual repo, creating a TypeScript react app using vite. I've been refactoring, adding the TS typing to the components. https://github.com/joncheng-dev/lab-inventory-tracker
+
 # Research TypeScript
 
 #### Watching "TypeScript Tutorial for Beginners"
