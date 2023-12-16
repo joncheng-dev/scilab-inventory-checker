@@ -38,6 +38,11 @@
 - 3:35 PM - Stepping away from React. Researching how to improve site appearance.
   Build a COMPLETE React Admin Dashboard App | React, Material UI, Data Grid, Light & Dark Mode: https://youtu.be/wYpCWwD1oz0?si=RWD9jL_3EMhcLiXe
   Watching Tailwind Tutorials Is A Waste Of Time: https://www.youtube.com/watch?v=Ksn1tThNTjI
+- 4:10 PM - More research
+  Ultimate Tailwind CSS Tutorial // Build a Discord-inspired Animated Navbar
+  https://www.youtube.com/watch?v=pfaSUYaSgRo
+  Search / Queries for Firebase & Firestore --> Understanding Firestore queries - Firebase v9
+  https://www.youtube.com/watch?v=AjcVq3SWo0U
 
 # Research TypeScript
 
