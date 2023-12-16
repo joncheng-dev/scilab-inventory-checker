@@ -34,11 +34,11 @@
 #### Friday, 12/15/2023
 
 - ~8:07 AM - Log Note: Been working on a new repository. Before, I've experimented with using React to connect to Firebase/Firestore. I've been able to CRUD the correct collections and logs in the database in Firestore. Decided to start my actual repo, creating a TypeScript react app using vite. I've been refactoring, adding the TS typing to the components. https://github.com/joncheng-dev/lab-inventory-tracker
-- 8:42 AM - On my form, I want users to be able to tick checkboxes to indicate that the item they are adding to the database has certain tags or categories (i.e. General, Biology, Chemistry, Earth Science, Physics). These values would be added to an array in the new entry I am creating. I'd also want this functionality on the Edit Form. So far, I've been following the tutorial here: https://contactmentor.com/checkbox-list-react-js-example/. However, their approach may not line up perfectly with mine. Spent the last half hour or so trying to merge this concept with mine.
-- 3:35 PM - Stepping away from React. Researching how to improve site appearance.
+- 8:42 AM - On my form, I want users to be able to tick checkboxes to indicate that the item they are adding to the database has certain tags or categories (i.e. General, Biology, Chemistry, Earth Science, Physics). These values would be added to an array in the new entry I am creating. I'd also want this functionality on the Edit Form. So far, I've been following the tutorial here: https://contactmentor.com/checkbox-list-react-js-example/. However, their approach may not line up perfectly with mine. Spent the last half hour or so trying to merge this concept with mine. Went to work on capstone repository after this. Got significant progress: UI for collecting tags on an item entry via checkboxes using forms. That information is saved into an array in the object, which is saved in the database. Also worked on wiring up InventoryControl, the parent component. Got most of this working -- TypeScript typed all the components. Found inconsistent document information on the database compared to the state displayed in Entry and EntryDetails.
+- 3:35 PM - Stepping away from React. Researching how to improve site appearance (mentally drained, did not take notes)
   Build a COMPLETE React Admin Dashboard App | React, Material UI, Data Grid, Light & Dark Mode: https://youtu.be/wYpCWwD1oz0?si=RWD9jL_3EMhcLiXe
   Watching Tailwind Tutorials Is A Waste Of Time: https://www.youtube.com/watch?v=Ksn1tThNTjI
-- 4:10 PM - More research
+- 4:10 PM - More research (mentally drained, did not take notes)
   Ultimate Tailwind CSS Tutorial // Build a Discord-inspired Animated Navbar
   https://www.youtube.com/watch?v=pfaSUYaSgRo
   Search / Queries for Firebase & Firestore --> Understanding Firestore queries - Firebase v9
