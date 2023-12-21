@@ -44,6 +44,10 @@
   Search / Queries for Firebase & Firestore --> Understanding Firestore queries - Firebase v9
   https://www.youtube.com/watch?v=AjcVq3SWo0U
 
+#### Thursday, 12/21/2023
+
+- ~8:00 AM - Started working on styling for my components. Then after scrum, I worked on a description to throw in the capstone channel for people interested. Afterwards, I did a little more styling. Then at some point I moved on to putting together a quick slideshow for my presentation at 1:40 PM. Time moves quick!
+
 # Research TypeScript
 
 #### Watching "TypeScript Tutorial for Beginners"
